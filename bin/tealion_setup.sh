@@ -1,4 +1,7 @@
 #!/bin/sh
+
+TEALION_ROOT="/home/pi/tealion"
+
 Check_ENV() {
 	if [ -z "$HOYA_API" ]; then
 		echo 'You need setting a environment variable of "HOYA_API", that is a api_key for textVoice of HOYA.'
