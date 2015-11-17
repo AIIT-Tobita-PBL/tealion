@@ -4,7 +4,7 @@ set -u
 
 USER=tobby
 TEALION_ROOT="/home/${USER}/tealion"; export TEALION
-INIT_PATH="/etc/init.d"
+INIT_PATH="${TEALION_ROOT}/etc/init.d"
 SUDO="sudo -u $USER"
 
 start () {
