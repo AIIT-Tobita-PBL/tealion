@@ -1,0 +1,83 @@
+#!/bin/bash
+set -e
+set -u
+
+TEALION_ROOT="/home/pi/tealion"; export TEALION
+INIT_PATH="$TEALION_ROOT/etc/init.d"
+
+export HOYA_API=3wmpsn7rpsqlw5tz
+
+start () {
+	# start TEALION
+
+	# make device_file(work around)
+	sudo modprobe snd-pcm-oss
+	cd /dev/
+	sudo rm /dev/dsp
+	sudo ln -s dsp1 dsp
+
+	# make wave_file
+	cd /tmp
+	if [ ! -L tealion ]; then
+		ln -s $TEALION_ROOT/share/voice tealion
+	fi
+
+	# make var directory
+	DIR_NAMES=("/var/run/tealion" "/var/log/tealion")
+	for DIR_NAME in ${DIR_NAMES[@]}; do
+		sudo mkdir -p $DIR_NAME
+		sudo chown pi:pi $DIR_NAME
+	done
+
+	$INIT_PATH/lifeSoundLog-master start
+	$INIT_PATH/julius start
+	$INIT_PATH/lifeSound_client-master start
+
+}
+
+stop () {
+	$INIT_PATH/lifeSound_client-master stop
+	$INIT_PATH/julius stop
+	$INIT_PATH/lifeSoundLog-master stop
+}
+
+restart () {
+  stop
+  start
+}
+
+status () {
+  ps aux | grep "tealion"
+}
+
+help () {
+  echo "Usage: $0 {start|stop|restart|status|help}"
+}
+
+if [ $# -lt 1 ]; then
+    help
+    exit 1
+fi
+
+case "$1" in
+  start)
+    start
+    ;;
+  stop)
+    stop
+    ;;
+  restart)
+    restart
+    ;;
+  status)
+    status
+    ;;
+  help)
+    help
+    ;;
+  *)
+    help
+    exit 1
+esac
+
+exit $?
