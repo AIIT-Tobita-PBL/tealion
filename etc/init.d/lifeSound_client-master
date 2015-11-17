@@ -8,7 +8,8 @@
 ############################################################
 DAEMON_NAME="lifeSound_client-master"
 
-TEALION_ROOT=/home/pi/tealion; export TEALION_ROOT
+USER=tobby
+TEALION_ROOT=/home/${USER}/tealion; export TEALION_ROOT
 DAEMON_DIR=$TEALION_ROOT/bin; export DAEMON_DIR
 
 DAEMON="$DAEMON_DIR/$DAEMON_NAME"
@@ -38,7 +39,7 @@ case "$1" in
             exit
         fi
 
-        $SSD --start --background --make-pidfile --pidfile $PIDFILE --exec $SCRIPT -c pi
+        $SSD --start --background --make-pidfile --pidfile $PIDFILE --exec $SCRIPT -c $USER
 
         /usr/bin/logger -t $DAEMON_NAME "$DAEMON_NAME has started."
         echo "done."
@@ -48,7 +49,7 @@ case "$1" in
 	# 子プロセスが残るので暫定対応
         #$SSD --stop --pidfile $PIDFILE
 	DAEMON_PPID=`cat $PIDFILE`; export DAEMON_PPID
-        kill `ps ho pid --ppid=$DAEMON_PPID`
+        kill `ps h -o pid --ppid=$DAEMON_PPID`
         rm -f $PIDFILE
 
         /usr/bin/logger -t $DAEMON_NAME "$DAEMON_NAME has stopped."
