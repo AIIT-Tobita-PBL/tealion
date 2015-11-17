@@ -5,7 +5,7 @@ set -u
 TEALION_ROOT="/home/pi/tealion"; export TEALION
 INIT_PATH="$TEALION_ROOT/etc/init.d"
 
-export HOYA_API=3wmpsn7rpsqlw5tz
+export HOYA_API=""
 
 start () {
 	# start TEALION
