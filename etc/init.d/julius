@@ -7,6 +7,7 @@
 #
 ############################################################
 DAEMON_NAME="julius"
+USER_NAME="pi"
 
 TEALION_ROOT=/home/pi/tealion; export TEALION_ROOT
 DAEMON_DIR=$TEALION_ROOT/bin; export DAEMON_DIR
@@ -38,7 +39,7 @@ case "$1" in
             exit
         fi
 
-        $SSD --start --background --make-pidfile --pidfile $PIDFILE --exec $SCRIPT -c pi
+        $SSD --start --background --make-pidfile --pidfile $PIDFILE --exec $SCRIPT -c $USER_NAME
 
         /usr/bin/logger -t $DAEMON_NAME "$DAEMON_NAME has started."
         echo "done."
