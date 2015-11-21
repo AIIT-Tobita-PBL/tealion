@@ -30,14 +30,14 @@ start () {
 		sudo chown $USER_NAME:$USER_NAME $DIR_NAME
 	done
 
-	sudo -c $USER_NAME $INIT_PATH/lifeSoundLog-master start
+	sudo -c $USER_NAME -i $INIT_PATH/lifeSoundLog-master start
 	$INIT_PATH/julius start
-	$INIT_PATH/lifeSound_client-master start
+	sudo -c $USER_NAME -i $INIT_PATH/lifeSound_client-master start
 
 }
 
 stop () {
-	$INIT_PATH/lifeSound_client-master stop
+	sudo -c $USER_NAME -i $INIT_PATH/lifeSound_client-master stop
 	$INIT_PATH/julius stop
 	sudo -c $USER_NAME $INIT_PATH/lifeSoundLog-master stop
 }
