@@ -2,11 +2,11 @@
 ############################################################
 #
 #
-# start-stop-daemon for lifeSound_client-master
+# start-stop-daemon for lifeSound_client
 #
 #
 ############################################################
-DAEMON_NAME="lifeSound_client-master"
+DAEMON_NAME="lifeSound_client"
 USER_NAME="pi"
 
 TEALION_ROOT=/home/pi/tealion; export TEALION_ROOT

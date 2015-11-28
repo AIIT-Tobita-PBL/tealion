@@ -24,16 +24,16 @@ start () {
 		sudo chown $USER_NAME:$USER_NAME $DIR_NAME
 	done
 
-	sudo -u $USER_NAME -i $INIT_PATH/lifeSoundLog-master start
+	sudo -u $USER_NAME -i $INIT_PATH/lifeSoundLog start
 	$INIT_PATH/julius start
-	sudo -u $USER_NAME -i $INIT_PATH/lifeSound_client-master start
+	sudo -u $USER_NAME -i $INIT_PATH/lifeSound_client start
 
 }
 
 stop () {
-	sudo -u $USER_NAME -i $INIT_PATH/lifeSound_client-master stop
+	sudo -u $USER_NAME -i $INIT_PATH/lifeSound_client stop
 	$INIT_PATH/julius stop
-	sudo -u $USER_NAME $INIT_PATH/lifeSoundLog-master stop
+	sudo -u $USER_NAME $INIT_PATH/lifeSoundLog stop
 }
 
 restart () {
