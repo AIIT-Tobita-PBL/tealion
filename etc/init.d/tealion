@@ -11,12 +11,6 @@ export HOYA_API=""
 start () {
 	# start TEALION
 
-	# make device_file(work around)
-	sudo modprobe snd-pcm-oss
-	cd /dev/
-	sudo rm /dev/dsp
-	sudo ln -s dsp1 dsp
-
 	# make wave_file
 	cd /tmp
 	if [ ! -L tealion ]; then
@@ -30,16 +24,16 @@ start () {
 		sudo chown $USER_NAME:$USER_NAME $DIR_NAME
 	done
 
-	sudo -c $USER_NAME -i $INIT_PATH/lifeSoundLog-master start
+	sudo -u $USER_NAME -i $INIT_PATH/lifeSoundLog-master start
 	$INIT_PATH/julius start
-	sudo -c $USER_NAME -i $INIT_PATH/lifeSound_client-master start
+	sudo -u $USER_NAME -i $INIT_PATH/lifeSound_client-master start
 
 }
 
 stop () {
-	sudo -c $USER_NAME -i $INIT_PATH/lifeSound_client-master stop
+	sudo -u $USER_NAME -i $INIT_PATH/lifeSound_client-master stop
 	$INIT_PATH/julius stop
-	sudo -c $USER_NAME $INIT_PATH/lifeSoundLog-master stop
+	sudo -u $USER_NAME $INIT_PATH/lifeSoundLog-master stop
 }
 
 restart () {
