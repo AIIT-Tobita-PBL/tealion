@@ -1,0 +1,4 @@
+-d ex1.bingram
+-v lifeSound.htkdic
+-h binhmm
+-input mic

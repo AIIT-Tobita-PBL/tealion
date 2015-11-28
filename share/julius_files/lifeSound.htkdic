@@ -1,0 +1,6 @@
+handWash	[handWash]	handWash
+noise	[noise]	noise
+doorOpen	[doorOpen]	doorOpen
+doorClose	[doorClose]	doorClose
+<s>	[<s>]	silence
+</s>	[</s>]	silence
