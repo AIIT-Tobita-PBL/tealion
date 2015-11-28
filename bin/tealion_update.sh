@@ -17,10 +17,16 @@ Git_fetch() {
 	echo ""
 	echo "Makeing git clone for lifeSound_client."
 	git fetch git://github.com/AIIT-Tobita-PBL/lifeSound_client
+	cd lifeSound_client
+	bundle install
+	cd ../
 
 	echo ""
 	echo "Makeing git clone for lifeSoundLog."
 	git fetch git://github.com/AIIT-Tobita-PBL/lifeSoundLog
+	cd lifeSoundLog
+	bundle install
+	cd ../
 
 	cd $TMP_PATH
 }
