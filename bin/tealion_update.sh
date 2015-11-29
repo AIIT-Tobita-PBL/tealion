@@ -3,7 +3,7 @@
 TEALION_ROOT="/home/pi/tealion"
 
 
-Git_fetch() {
+Git_pull() {
 	########################################
 	# git fetch
 	########################################
@@ -17,14 +17,14 @@ Git_fetch() {
 	echo ""
 	echo "fetch lifeSound_client."
 	cd lifeSound_client
-	git fetch git://github.com/AIIT-Tobita-PBL/lifeSound_client
+	git pull
 	bundle install
 	cd ../
 
 	echo ""
 	echo "fetch lifeSoundLog."
 	cd lifeSoundLog
-	git fetch git://github.com/AIIT-Tobita-PBL/lifeSoundLog
+	git pull
 	bundle install
 	cd ../
 
@@ -32,6 +32,6 @@ Git_fetch() {
 }
 
 cd $TEALION_ROOT/bin
-Git_fetch
+Git_pull
 
 exit 0
