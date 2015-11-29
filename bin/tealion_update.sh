@@ -5,7 +5,7 @@ TEALION_ROOT="/home/pi/tealion"
 
 Git_fetch() {
 	########################################
-	# git clone
+	# git fetch
 	########################################
 	echo ""
 	echo "Changing dir and makeing git clone."
@@ -15,16 +15,16 @@ Git_fetch() {
 	cd ../lib/
 
 	echo ""
-	echo "Makeing git clone for lifeSound_client."
-	git fetch git://github.com/AIIT-Tobita-PBL/lifeSound_client
+	echo "fetch lifeSound_client."
 	cd lifeSound_client
+	git fetch git://github.com/AIIT-Tobita-PBL/lifeSound_client
 	bundle install
 	cd ../
 
 	echo ""
-	echo "Makeing git clone for lifeSoundLog."
-	git fetch git://github.com/AIIT-Tobita-PBL/lifeSoundLog
+	echo "fetch lifeSoundLog."
 	cd lifeSoundLog
+	git fetch git://github.com/AIIT-Tobita-PBL/lifeSoundLog
 	bundle install
 	cd ../
 
