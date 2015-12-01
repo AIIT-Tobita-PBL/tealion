@@ -1,0 +1,83 @@
+#!/bin/bash
+############################################################
+#
+#
+# start-stop-daemon for julius-voice
+#
+#
+############################################################
+DAEMON_NAME="julius-voice"
+USER_NAME="pi"
+
+TEALION_ROOT=/home/pi/tealion; export TEALION_ROOT
+DAEMON_DIR=$TEALION_ROOT/bin; export DAEMON_DIR
+
+DAEMON="$DAEMON_DIR/julius-voice"
+PIDFILE=/var/run/tealion/$DAEMON_NAME.pid
+
+SSD=/sbin/start-stop-daemon
+
+
+case "${SLEDGE_CONFIG_NAME}" in
+    _dev_*)
+        echo "development environment"
+        SCRIPT="$DAEMON"
+        ;;
+    *)
+        echo "productiton environment"
+        SCRIPT="$DAEMON"
+        ;;
+esac
+
+case "$1" in
+    start)
+        echo -n "Starting Daemon: "
+
+        if $SSD --stop --quiet --pidfile $PIDFILE --signal 0
+        then
+            echo "already running"
+            exit
+        fi
+
+        $SSD --start --background --make-pidfile --pidfile $PIDFILE --exec $SCRIPT -c $USER_NAME
+
+        /usr/bin/logger -t $DAEMON_NAME "$DAEMON_NAME has started."
+        echo "done."
+        ;;
+    stop)
+        echo -n "Stopping Daemon: "
+	# 子プロセスが残るので暫定対応
+        #$SSD --stop --pidfile $PIDFILE
+	DAEMON_PPID=`cat $PIDFILE`; export DAEMON_PPID
+        kill `ps ho pid --ppid=$DAEMON_PPID`
+        rm -f $PIDFILE
+
+        /usr/bin/logger -t $DAEMON_NAME "$DAEMON_NAME has stopped."
+        echo "done."
+        ;;
+    reload)
+        echo -n "Stopping Daemon: "
+        $SSD --stop --pidfile $PIDFILE
+        rm -f $PIDFILE
+
+	/usr/bin/logger -t $DAEMON_NAME "$DAEMON_NAME has stopped."
+        echo "done."
+
+	echo -n "Starting Daemon: "
+
+        if $SSD --stop --quiet --pidfile $PIDFILE --signal 0
+        then
+            echo "already running"
+            exit
+        fi
+
+        ifconfig eth1 up -arp
+        $SSD --start --background --make-pidfile --pidfile $PIDFILE --exec $SCRIPT
+
+        /usr/bin/logger -t $DAEMON_NAME "$DAEMON_NAME has started."
+        echo "done."
+        ;;
+    *)
+        echo "Usage: $0 (start|stop|reload)"
+        ;;
+esac

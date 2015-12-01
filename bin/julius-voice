@@ -1,0 +1,2 @@
+#!/bin/sh
+/usr/local/bin/julius -C $TEALION_ROOT/share/dictation-kit/main.jconf -C $TEALION_ROOT/share/dictation-kit/am-gmm.jconf -nostrip -input mic -module 10501 >>/var/log/tealion/julius-voice.log 2>&1

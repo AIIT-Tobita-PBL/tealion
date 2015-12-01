@@ -54,6 +54,11 @@ Git_clone() {
 	bundle install
 	cd ../
 
+	cd ../share/
+	echo ""
+	echo "Makeing git clone for dictation-kit."
+	git clone https://github.com/julius-speech/dictation-kit
+
 	cd $TMP_PATH
 }
 
