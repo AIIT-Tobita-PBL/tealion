@@ -5,24 +5,24 @@ TEALION_ROOT="/home/pi/tealion"
 
 Git_pull() {
 	########################################
-	# git fetch
+	# git pull
 	########################################
 	echo ""
-	echo "Changing dir and makeing git clone."
+	echo "update from github."
 	echo ""
 
 	TMP_PATH=`pwd`
 	cd ../lib/
 
 	echo ""
-	echo "fetch lifeSound_client."
+	echo "pull lifeSound_client."
 	cd lifeSound_client
 	git pull
 	bundle install
 	cd ../
 
 	echo ""
-	echo "fetch lifeSoundLog."
+	echo "pull lifeSoundLog."
 	cd lifeSoundLog
 	git pull
 	bundle install
