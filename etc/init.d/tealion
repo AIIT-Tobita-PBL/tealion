@@ -2,7 +2,7 @@
 set -e
 set -u
 
-TEALION_ROOT="/home/pi/tealion"; export TEALION
+TEALION_ROOT="/opt/tealion"; export TEALION
 INIT_PATH="$TEALION_ROOT/etc/init.d"
 USER_NAME="pi"
 

@@ -3,7 +3,7 @@ set -e
 set -u
 
 # アプリケーションのルートディレクトリを指定
-APPLICATION_ROOT="/home/pi/tealion"
+APPLICATION_ROOT="/opt/tealion"
 APPLICATION_PATH="$APPLICATION_ROOT/lib/lifeSoundLog"
 
 # オプション設定

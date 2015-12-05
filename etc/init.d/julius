@@ -9,7 +9,7 @@
 DAEMON_NAME="julius"
 USER_NAME="pi"
 
-TEALION_ROOT=/home/pi/tealion; export TEALION_ROOT
+TEALION_ROOT=/opt/tealion; export TEALION_ROOT
 DAEMON_DIR=$TEALION_ROOT/bin; export DAEMON_DIR
 
 DAEMON="$DAEMON_DIR/julius"
