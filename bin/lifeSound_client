@@ -1,3 +1,4 @@
 #!/bin/sh
+rm -f $TEALION_ROOT/share/voice/record/wavFile.wav
 cd $TEALION_ROOT/lib/lifeSound_client
 ruby tealion_client.rb >>/var/log/tealion/lifeSound_client.log 2>&1

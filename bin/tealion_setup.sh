@@ -1,6 +1,6 @@
 #!/bin/sh
 
-TEALION_ROOT="/home/pi/tealion"
+TEALION_ROOT="/opt/tealion"
 
 Check_ENV() {
 	if [ -z "$HOYA_API" ]; then

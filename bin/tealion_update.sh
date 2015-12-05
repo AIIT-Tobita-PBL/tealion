@@ -1,6 +1,6 @@
 #!/bin/sh
 
-TEALION_ROOT="/home/pi/tealion"
+TEALION_ROOT="/opt/tealion"
 
 
 Git_pull() {
