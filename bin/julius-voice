@@ -1,2 +1,4 @@
 #!/bin/sh
-/usr/local/bin/julius -C $TEALION_ROOT/share/dictation-kit/main.jconf -C $TEALION_ROOT/share/dictation-kit/am-gmm.jconf -nostrip -input mic -module 10501 >>/var/log/tealion/julius-voice.log 2>&1
+#/usr/local/bin/julius -C $TEALION_ROOT/share/dictation-kit/main.jconf -C $TEALION_ROOT/share/dictation-kit/am-gmm.jconf -nostrip -input mic -module 10501 >>/var/log/tealion/julius-voice.log 2>&1
+#/usr/local/bin/julius -C $TEALION_ROOT/share/grammar-kit-v4.1/testmic.jconf -charconv EUC-JP UTF-8 -nostrip -input mic -module 10501 >>/var/log/tealion/julius-voice.log 2>&1
+/usr/local/bin/julius -C $TEALION_ROOT/share/julius-voice/word.jconf >>/var/log/tealion/julius-voice.log 2>&1
