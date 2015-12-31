@@ -28,6 +28,7 @@ start () {
 	$INIT_PATH/julius start
 	$INIT_PATH/julius-voice start
 	sudo -u $USER_NAME -i $INIT_PATH/lifeSound_client start
+	sudo -u $USER_NAME -i $INIT_PATH/tealion_voice start
 
 }
 

@@ -1,0 +1,3 @@
+#!/bin/sh
+cd $TEALION_ROOT/lib/tealion_voice
+ruby tealion_client.rb >>/var/log/tealion/tealion_voice.log 2>&1
