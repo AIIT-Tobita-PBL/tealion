@@ -3,6 +3,9 @@
 
 require 'pg'
 
+require File.dirname(__FILE__) + "/Rails"
+
+
 APP_ROOT="#{ENV['TEALION_ROOT']}"
 
 
@@ -64,6 +67,8 @@ def parse(msgs)
 		if(msg =~ /(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2}) : 環境音\((.*)\)を認識しました/)
 			log_time = Time.local($1, $2, $3, $4, $5, 0)
 			t = Time.now()
+			ts = t.strftime("%Y-%m-%d %H:%M")
+
 			recog_sound = $6
 
 			# 3分以上経過した施錠音のみフラグを立てる
@@ -74,8 +79,13 @@ def parse(msgs)
 
 			# 施錠音のフラグあった場合のみ手洗いを確認する
 			if sound_patterns[1] == recog_sound && lock_flg then
-				ugai_flg = true
 				debug.print("ugai")
+
+				if ugai_flg == false
+					rails = Rails.new()
+					rails.send_json("#{ts} : 実績(うがい)")
+					ugai_flg = true
+				end
 			end
 		end
 	end
