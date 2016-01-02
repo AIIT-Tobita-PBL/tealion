@@ -1,3 +1,4 @@
 #!/bin/sh
-cd $TEALION_ROOT/lib/tealion_voice
-ruby tealion_client.rb >>/var/log/tealion/tealion_voice.log 2>&1
+#rm -f $TEALION_ROOT/share/voice/record/wavFile.wav
+cd $TEALION_ROOT/lib/lifeSound_client
+ruby tealion_voice.rb >>/var/log/tealion/lifeSound_client.log 2>&1
