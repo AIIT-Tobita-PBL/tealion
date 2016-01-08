@@ -6,7 +6,7 @@ TEALION_ROOT="/opt/tealion"; export TEALION
 INIT_PATH="$TEALION_ROOT/etc/init.d"
 USER_NAME="pi"
 
-export HOYA_API=""
+#export HOYA_API=""
 
 start () {
 	# start TEALION
@@ -29,10 +29,12 @@ start () {
 	$INIT_PATH/julius-voice start
 	sudo -u $USER_NAME -i $INIT_PATH/lifeSound_client start
 	sudo -u $USER_NAME -i $INIT_PATH/tealion_voice start
+	sudo -u $USER_NAME -i $INIT_PATH/lifelog start
 
 }
 
 stop () {
+	sudo -u $USER_NAME -i $INIT_PATH/lifelog stop
 	sudo -u $USER_NAME -i $INIT_PATH/tealion_voice stop
 	sudo -u $USER_NAME -i $INIT_PATH/lifeSound_client stop
 	$INIT_PATH/julius stop
