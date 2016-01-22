@@ -1,0 +1,41 @@
+VERSION=1.0
+N=14   L=25   
+I=0    W=silence             
+I=1    W=noise               
+I=2    W=!NULL               
+I=3    W=entrance_open       
+I=4    W=!NULL               
+I=5    W=noise               
+I=6    W=entrance_lock       
+I=7    W=noise               
+I=8    W=entrance_open       
+I=9    W=noise               
+I=10   W=silence             
+I=11   W=!NULL               
+I=12   W=!NULL               
+I=13   W=!NULL               
+J=0     S=0    E=0    
+J=1     S=2    E=0    
+J=2     S=2    E=1    
+J=3     S=1    E=2    
+J=4     S=6    E=2    
+J=5     S=8    E=2    
+J=6     S=9    E=3    
+J=7     S=11   E=3    
+J=8     S=3    E=4    
+J=9     S=5    E=4    
+J=10    S=4    E=5    
+J=11    S=4    E=6    
+J=12    S=7    E=7    
+J=13    S=9    E=7    
+J=14    S=11   E=7    
+J=15    S=7    E=8    
+J=16    S=9    E=8    
+J=17    S=11   E=8    
+J=18    S=9    E=9    
+J=19    S=11   E=9    
+J=20    S=11   E=10   
+J=21    S=10   E=11   
+J=22    S=13   E=11   
+J=23    S=0    E=12   
+J=24    S=2    E=12   

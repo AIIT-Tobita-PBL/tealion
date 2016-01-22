@@ -1,0 +1,42 @@
+ <s> entrance_walking entrance_open shoes_off </s>
+ <s> shoes_on entrance_open entrance_walking </s>
+ <s> outdoor entrance_lock outdoor </s>
+ <s> outdoor entrance_open shoes_off </s>
+ <s> shoes_off entrance_lock shoes_off </s>
+ <s> entrance_walking entrance_lock shoes_off </s>
+ <s> shoes_on entrance_lock outdoor </s>
+ <s> entrance_open </s>
+ <s> entrance_lock outdoor </s>
+ <s> entrance_walking entrance_lock outdoor </s>
+ <s> outdoor entrance_open outdoor </s>
+ <s> entrance_lock entrance_walking </s>
+ <s> outdoor entrance_open entrance_walking </s>
+ <s> outdoor entrance_open shoes_on </s>
+ <s> entrance_lock </s>
+ <s> shoes_on entrance_open shoes_off </s>
+ <s> shoes_on entrance_open shoes_on </s>
+ <s> shoes_off entrance_open shoes_off </s>
+ <s> entrance_open entrance_walking </s>
+ <s> outdoor entrance_lock entrance_walking </s>
+ <s> entrance_walking entrance_open shoes_on </s>
+ <s> entrance_lock shoes_on </s>
+ <s> shoes_on entrance_lock shoes_on </s>
+ <s> entrance_walking entrance_open outdoor </s>
+ <s> shoes_off entrance_open outdoor </s>
+ <s> shoes_off entrance_lock outdoor </s>
+ <s> entrance_walking entrance_lock entrance_walking </s>
+ <s> shoes_off entrance_open shoes_on </s>
+ <s> entrance_open shoes_off </s>
+ <s> entrance_open outdoor </s>
+ <s> entrance_walking entrance_open entrance_walking </s>
+ <s> shoes_off entrance_lock shoes_on </s>
+ <s> entrance_open shoes_on </s>
+ <s> shoes_off entrance_open entrance_walking </s>
+ <s> shoes_on entrance_open outdoor </s>
+ <s> entrance_lock shoes_off </s>
+ <s> outdoor entrance_lock shoes_off </s>
+ <s> shoes_on entrance_lock entrance_walking </s>
+ <s> entrance_walking entrance_lock shoes_on </s>
+ <s> outdoor entrance_lock shoes_on </s>
+ <s> shoes_off entrance_lock entrance_walking </s>
+ <s> shoes_on entrance_lock shoes_off </s>

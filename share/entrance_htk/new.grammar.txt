@@ -1,0 +1,4 @@
+$DOOR_IN = {noise} entrance_open;
+$DOOR_OUT = entrance_open {noise} entrance_lock;
+$DOOR_EVENT = $DOOR_IN | $DOOR_OUT;
+( {silence} {noise} $DOOR_EVENT {noise} {silence} )

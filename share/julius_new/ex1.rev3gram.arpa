@@ -1,0 +1,71 @@
+\data\
+ngram 1=7
+ngram 2=17
+ngram 3=34
+
+
+\1-grams:
+-1.88081 <UNK>  0.0000
+-0.63129 </s>  -0.4103
+-0.65612 <s>  -1.1397
+-0.93232 handWash  -0.2720
+-0.80738 shower  -0.4460
+-0.98348 ugai  -0.2342
+-0.80738 waterstream  -0.4460
+
+\2-grams:
+-0.86530 </s> handWash  0.3010
+-0.56427 </s> shower  -0.3802
+-0.86530 </s> ugai  0.2632
+-0.56427 </s> waterstream  -0.3802
+-0.02482 <s> </s>  0.0202
+-0.60206 handWash <s>  0.6532
+-0.60206 handWash shower  -0.3802
+-0.60206 handWash waterstream  -0.3802
+-0.39794 shower <s>  0.4102
+-0.69897 shower handWash  0.3010
+-0.69897 shower ugai  0.2632
+-0.74036 ugai <s>  0.7782
+-0.56427 ugai shower  -0.3802
+-0.56427 ugai waterstream  -0.3802
+-0.39794 waterstream <s>  0.4102
+-0.69897 waterstream handWash  0.3010
+-0.69897 waterstream ugai  0.2632
+
+\3-grams:
+-0.77815 </s> handWash <s> 
+-0.77815 </s> handWash shower 
+-0.77815 </s> handWash waterstream 
+-0.42597 </s> shower handWash 
+-0.42597 </s> shower ugai 
+-0.77815 </s> ugai <s> 
+-0.77815 </s> ugai shower 
+-0.77815 </s> ugai waterstream 
+-0.42597 </s> waterstream handWash 
+-0.42597 </s> waterstream ugai 
+-0.84510 <s> </s> handWash 
+-0.54407 <s> </s> shower 
+-0.84510 <s> </s> ugai 
+-0.62325 <s> </s> waterstream 
+-0.12494 handWash <s> </s> 
+-0.12494 handWash shower <s> 
+-0.12494 handWash waterstream <s> 
+-0.06695 shower <s> </s> 
+-0.77815 shower handWash <s> 
+-0.77815 shower handWash shower 
+-0.77815 shower handWash waterstream 
+-0.77815 shower ugai <s> 
+-0.77815 shower ugai shower 
+-0.77815 shower ugai waterstream 
+-0.17609 ugai <s> </s> 
+-0.12494 ugai shower <s> 
+-0.12494 ugai waterstream <s> 
+-0.06695 waterstream <s> </s> 
+-0.77815 waterstream handWash <s> 
+-0.77815 waterstream handWash shower 
+-0.77815 waterstream handWash waterstream 
+-0.77815 waterstream ugai <s> 
+-0.77815 waterstream ugai shower 
+-0.77815 waterstream ugai waterstream 
+
+\end\

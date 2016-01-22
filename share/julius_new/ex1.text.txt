@@ -1,0 +1,18 @@
+ <s> ugai waterstream </s>
+ <s> waterstream handWash waterstream </s>
+ <s> shower ugai shower </s>
+ <s> waterstream ugai shower </s>
+ <s> shower handWash waterstream </s>
+ <s> handWash </s>
+ <s> ugai shower </s>
+ <s> waterstream ugai </s>
+ <s> ugai </s>
+ <s> handWash waterstream </s>
+ <s> shower handWash </s>
+ <s> waterstream ugai waterstream </s>
+ <s> waterstream handWash shower </s>
+ <s> shower ugai </s>
+ <s> handWash shower </s>
+ <s> waterstream handWash </s>
+ <s> shower handWash shower </s>
+ <s> shower ugai waterstream </s>

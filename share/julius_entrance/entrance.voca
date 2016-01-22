@@ -1,0 +1,13 @@
+%DOOR_OPEN
+entrance_open entrance_open
+%LOCK
+entrance_lock entrance_lock
+%NOISE
+outdoor outdoor
+shoes_on shoes_on
+shoes_off shoes_off
+entrance_walking entrance_walking
+% NS_B
+<s> silence
+% NS_E
+</s> silence

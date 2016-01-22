@@ -1,0 +1,5 @@
+entrance_open	[entrance_open]	entrance_open
+entrance_lock	[entrance_lock]	entrance_lock
+noise	[noise]	outdoor shoes_on shoes_off entrance_walking
+<s>	[<s>]	silence
+</s>	[</s>]	silence

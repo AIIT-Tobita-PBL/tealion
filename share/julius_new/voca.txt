@@ -1,0 +1,5 @@
+handWash [handWash] handWash
+waterstream [waterstream] waterstream
+shower [shower] shower
+ugai [ugai] ugai 
+silence [silence] silence

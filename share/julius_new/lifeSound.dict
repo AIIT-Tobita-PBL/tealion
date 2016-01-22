@@ -1,0 +1,6 @@
+0	[handWash]	handWash
+0	[ugai]	ugai
+1	[waterstream]	waterstream
+1	[shower]	shower
+2	[<s>]	silence
+3	[</s>]	silence

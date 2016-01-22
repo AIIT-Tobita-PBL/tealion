@@ -1,0 +1,121 @@
+\data\
+ngram 1=9
+ngram 2=29
+ngram 3=70
+
+
+\1-grams:
+-2.29226 <UNK>  0.0000
+-0.67123 </s>  -0.5329
+-0.68169 <s>  -1.5191
+-0.97226 entrance_lock  -0.3510
+-0.97226 entrance_open  -0.3510
+-1.06403 entrance_walking  -0.5864
+-1.03921 outdoor  -0.6075
+-1.03921 shoes_off  -0.6075
+-1.03921 shoes_on  -0.6075
+
+\2-grams:
+-1.68124 </s> entrance_lock  -0.2083
+-1.68124 </s> entrance_open  -0.2083
+-0.68124 </s> entrance_walking  -0.4771
+-0.68124 </s> outdoor  -0.4973
+-0.68124 </s> shoes_off  -0.4973
+-0.68124 </s> shoes_on  -0.4973
+-0.01047 <s> </s>  0.0091
+-0.71600 entrance_lock <s>  0.8451
+-0.81291 entrance_lock entrance_walking  -0.5119
+-0.81291 entrance_lock outdoor  -0.4907
+-0.81291 entrance_lock shoes_off  -0.4907
+-0.81291 entrance_lock shoes_on  -0.4907
+-0.71600 entrance_open <s>  0.8451
+-0.81291 entrance_open entrance_walking  -0.5119
+-0.81291 entrance_open outdoor  -0.4907
+-0.81291 entrance_open shoes_off  -0.4907
+-0.81291 entrance_open shoes_on  -0.4907
+-0.45593 entrance_walking <s>  0.7202
+-0.60206 entrance_walking entrance_lock  0.4150
+-0.60206 entrance_walking entrance_open  0.4150
+-0.41913 outdoor <s>  0.6690
+-0.62325 outdoor entrance_lock  0.4150
+-0.62325 outdoor entrance_open  0.4150
+-0.41913 shoes_off <s>  0.6690
+-0.62325 shoes_off entrance_lock  0.4150
+-0.62325 shoes_off entrance_open  0.4150
+-0.41913 shoes_on <s>  0.6690
+-0.62325 shoes_on entrance_lock  0.4150
+-0.62325 shoes_on entrance_open  0.4150
+
+\3-grams:
+-0.30103 </s> entrance_lock <s> 
+-0.30103 </s> entrance_open <s> 
+-0.38021 </s> entrance_walking entrance_lock 
+-0.38021 </s> entrance_walking entrance_open 
+-0.38021 </s> outdoor entrance_lock 
+-0.38021 </s> outdoor entrance_open 
+-0.38021 </s> shoes_off entrance_lock 
+-0.38021 </s> shoes_off entrance_open 
+-0.38021 </s> shoes_on entrance_lock 
+-0.38021 </s> shoes_on entrance_open 
+-1.67210 <s> </s> entrance_lock 
+-1.67210 <s> </s> entrance_open 
+-0.67210 <s> </s> entrance_walking 
+-0.67210 <s> </s> outdoor 
+-0.71786 <s> </s> shoes_off 
+-0.67210 <s> </s> shoes_on 
+-0.07918 entrance_lock <s> </s> 
+-0.09691 entrance_lock entrance_walking <s> 
+-0.09691 entrance_lock outdoor <s> 
+-0.09691 entrance_lock shoes_off <s> 
+-0.09691 entrance_lock shoes_on <s> 
+-0.07918 entrance_open <s> </s> 
+-0.09691 entrance_open entrance_walking <s> 
+-0.09691 entrance_open outdoor <s> 
+-0.09691 entrance_open shoes_off <s> 
+-0.09691 entrance_open shoes_on <s> 
+-0.05799 entrance_walking <s> </s> 
+-1.00000 entrance_walking entrance_lock <s> 
+-1.00000 entrance_walking entrance_lock entrance_walking 
+-1.00000 entrance_walking entrance_lock outdoor 
+-1.00000 entrance_walking entrance_lock shoes_off 
+-1.00000 entrance_walking entrance_lock shoes_on 
+-1.00000 entrance_walking entrance_open <s> 
+-1.00000 entrance_walking entrance_open entrance_walking 
+-1.00000 entrance_walking entrance_open outdoor 
+-1.00000 entrance_walking entrance_open shoes_off 
+-1.00000 entrance_walking entrance_open shoes_on 
+-0.05115 outdoor <s> </s> 
+-1.00000 outdoor entrance_lock <s> 
+-1.00000 outdoor entrance_lock entrance_walking 
+-1.00000 outdoor entrance_lock outdoor 
+-1.00000 outdoor entrance_lock shoes_off 
+-1.00000 outdoor entrance_lock shoes_on 
+-1.00000 outdoor entrance_open <s> 
+-1.00000 outdoor entrance_open entrance_walking 
+-1.00000 outdoor entrance_open outdoor 
+-1.00000 outdoor entrance_open shoes_off 
+-1.00000 outdoor entrance_open shoes_on 
+-0.05115 shoes_off <s> </s> 
+-1.00000 shoes_off entrance_lock <s> 
+-1.00000 shoes_off entrance_lock entrance_walking 
+-1.00000 shoes_off entrance_lock outdoor 
+-1.00000 shoes_off entrance_lock shoes_off 
+-1.00000 shoes_off entrance_lock shoes_on 
+-1.00000 shoes_off entrance_open <s> 
+-1.00000 shoes_off entrance_open entrance_walking 
+-1.00000 shoes_off entrance_open outdoor 
+-1.00000 shoes_off entrance_open shoes_off 
+-1.00000 shoes_off entrance_open shoes_on 
+-0.05115 shoes_on <s> </s> 
+-1.00000 shoes_on entrance_lock <s> 
+-1.00000 shoes_on entrance_lock entrance_walking 
+-1.00000 shoes_on entrance_lock outdoor 
+-1.00000 shoes_on entrance_lock shoes_off 
+-1.00000 shoes_on entrance_lock shoes_on 
+-1.00000 shoes_on entrance_open <s> 
+-1.00000 shoes_on entrance_open entrance_walking 
+-1.00000 shoes_on entrance_open outdoor 
+-1.00000 shoes_on entrance_open shoes_off 
+-1.00000 shoes_on entrance_open shoes_on 
+
+\end\
