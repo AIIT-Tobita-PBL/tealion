@@ -1,0 +1,10 @@
+%LIFESOUND
+handWash handWash
+ugai ugai
+%STREAM
+waterstream waterstream
+shower shower
+% NS_B
+<s> silence
+% NS_E
+</s> silence

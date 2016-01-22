@@ -1,0 +1,8 @@
+0	[entrance_open]	entrance_open
+1	[entrance_lock]	entrance_lock
+2	[outdoor]	outdoor
+2	[shoes_on]	shoes_on
+2	[shoes_off]	shoes_off
+2	[entrance_walking]	entrance_walking
+3	[<s>]	silence
+4	[</s>]	silence

@@ -1,0 +1,48 @@
+\data\
+ngram 1=9
+ngram 2=29
+
+
+\1-grams:
+-2.29447 <UNK>  0.0000
+-0.68389 </s>  -1.5197
+-0.67343 <s>  -0.5307
+-0.97446 entrance_lock  -0.3488
+-0.97446 entrance_open  -0.3488
+-1.04140 entrance_walking  -0.6091
+-1.04140 outdoor  -0.6091
+-1.04140 shoes_off  -0.6091
+-1.04140 shoes_on  -0.6091
+
+\2-grams:
+-0.01047 </s> <s> 
+-0.98227 <s> entrance_lock 
+-0.98227 <s> entrance_open 
+-0.77815 <s> entrance_walking 
+-0.77815 <s> outdoor 
+-0.77815 <s> shoes_off 
+-0.77815 <s> shoes_on 
+-1.41497 entrance_lock </s> 
+-0.71600 entrance_lock entrance_walking 
+-0.71600 entrance_lock outdoor 
+-0.71600 entrance_lock shoes_off 
+-0.71600 entrance_lock shoes_on 
+-1.41497 entrance_open </s> 
+-0.71600 entrance_open entrance_walking 
+-0.71600 entrance_open outdoor 
+-0.71600 entrance_open shoes_off 
+-0.71600 entrance_open shoes_on 
+-0.32222 entrance_walking </s> 
+-0.72016 entrance_walking entrance_lock 
+-0.72016 entrance_walking entrance_open 
+-0.32222 outdoor </s> 
+-0.72016 outdoor entrance_lock 
+-0.72016 outdoor entrance_open 
+-0.32222 shoes_off </s> 
+-0.72016 shoes_off entrance_lock 
+-0.72016 shoes_off entrance_open 
+-0.32222 shoes_on </s> 
+-0.72016 shoes_on entrance_lock 
+-0.72016 shoes_on entrance_open 
+
+\end\

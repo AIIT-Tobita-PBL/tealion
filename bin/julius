@@ -1,2 +1,2 @@
 #!/bin/sh
-/usr/local/bin/julius -C $TEALION_ROOT/share/julius_files/lifeSound.jconf -input mic -module >>/var/log/tealion/julius.log 2>&1
+/usr/local/bin/julius -C $TEALION_ROOT/share/julius-lifeSound/lifeSound.jconf -input mic -module >>/var/log/tealion/julius.log 2>&1

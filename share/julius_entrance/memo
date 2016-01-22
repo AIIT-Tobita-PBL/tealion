@@ -1,0 +1,1 @@
+sudo text2idngram -n 2 -vocab ex1.vocab -temp /usr/local/tmp/ < ex1.text > ex1.id2gram 
