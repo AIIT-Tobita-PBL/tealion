@@ -1,0 +1,9 @@
+-d entrance.bingram
+-v entrance.htkdict
+-h entrance.binhmm
+-gmm entrance.bingmm
+-gmmreject "20160131_noise,cup,dryer,hamigaki,handWash,pe,shock,sil,streamEnd,streamStart,ugai,walk,washStand_noise,waterStream,entrance_close,entrance_open,entrance_walking,noise,outdoor,shoes_off,shoes_on,walking"
+-n 10
+-output 1
+-input mic
+-module 10500
