@@ -1,0 +1,2 @@
+#!/bin/sh
+/usr/local/bin/julius -C $TEALION_ROOT/share/julius-entrance/entrance.jconf >>/var/log/tealion/julius.log 2>&1

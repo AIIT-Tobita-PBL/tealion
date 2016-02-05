@@ -1,8 +1,0 @@
-entrance_lock
-entrance_open
-entrance_close
-entrance_walking
-outdoor
-shoes_off
-shoes_on
-silence

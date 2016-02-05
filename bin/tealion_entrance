@@ -1,0 +1,3 @@
+#!/bin/sh
+cd $TEALION_ROOT/lib/lifeSound_client
+ruby tealion_entrance.rb >>/var/log/tealion/tealion_entrance.log 2>&1
