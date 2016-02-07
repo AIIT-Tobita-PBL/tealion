@@ -2,6 +2,8 @@
 -v ../dictation-kit/model/lang_m/bccwj.60k.htkdic  #N-gram、または文法用の単語辞書ファイルを指定する
 -h ../dictation-kit/model/phone_m/jnas-tri-3k16-gid.binhmm #使用するHMM定義ファイル
 -hlist ../dictation-kit/model/phone_m/logicalTri   #HMMlistファイルを指定する
+-gmm entrance.bingmm
+-gmmreject "20160131_noise,shock,sil,washStand_noise,entrance_close,entrance_open,noise,outdoor,shoes_off,shoes_on"
 #-gram tealion
 #-n 5        #n個の文仮説数が見つかるまで検索を行う
 -output 1     #見つかったN-best候補のうち、結果として出力する個数
